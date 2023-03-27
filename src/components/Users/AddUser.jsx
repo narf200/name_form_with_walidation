@@ -18,7 +18,7 @@ export default function AddUser({ getData }) {
       });
       return;
     }
-    if (userAge < 1) {
+    if (+userAge < 1) {
       setError({
         title: "Invalid input",
         message: "Please enter a valid age ( > 0 ).",
